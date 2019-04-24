@@ -13,6 +13,10 @@
       width: 100%;
   }
   
+  .main-container {
+    display: flex; 
+  }
+
   /* Slide */
    .hover img {
       margin-left: 10px;

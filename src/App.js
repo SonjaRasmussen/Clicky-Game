@@ -4,6 +4,7 @@ import Wrapper from "./components/Wrapper";
 import Score from "./components/Score";
 import skateboarder from "./cards.json";
 import "./App.css";
+import Navigation from './components/Navigation';
 
 
 class App extends Component {
@@ -45,12 +46,9 @@ class App extends Component {
     //Map over and render a card components for each object
     render() {
       return(
-        <div className="App">
-        <header className="App-header">
-        <h1 className="App-title"> The Clicky Game </h1> 
-        <p className="App-intro"> 
-          Don't click the same image twice! </p> 
-          </header>
+        <div> <Navigation />   
+         <div className="container">
+        </div>
           <Score total={this.state.score}
             goal={8}
             status={this.state.status} />
@@ -64,12 +62,14 @@ class App extends Component {
             />
           ))}
         </Wrapper>
-        <footer>
+       
 
         
-         <p>Sonja Rasmussen
-          <a href="https://github.com/sonjarasmussen/Clicky-Game" target="_blank" rel="noopener noreferrer"> </a>.</p>
-        </footer>
+         
+         <div class="card-footer text-muted navbar dark bg-dark">
+    
+  </div>
+        
         </div>
       );
     }
