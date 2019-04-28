@@ -15,7 +15,7 @@ Every time an image is clicked, the images rendered to the page will shuffle the
 
 Once the user's score is reset after an incorrect guess, the game will restart.
 
-![Game](/images/clicky-game.png)
+![Game](clicky-game.png)
 
 
 **Developer**: Sonja Rasmussen
