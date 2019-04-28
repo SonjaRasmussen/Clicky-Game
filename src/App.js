@@ -46,14 +46,16 @@ class App extends Component {
     //Map over and render a card components for each object
     render() {
       return(
-        <div> <Navigation />   
-         <div className="container">
-        </div>
+        <div><Navigation />
+        <div className="container">
+        
           <Score total={this.state.score}
             goal={8}
             status={this.state.status} />
+             <div className="card-container"> 
           <Wrapper>
           {this.state.skateboarder.map(skateboarder => (
+           
             <Card
               shuffleScoreCard={this.shuffleScoreCard}
               id={skateboarder.id}
@@ -62,14 +64,11 @@ class App extends Component {
             />
           ))}
         </Wrapper>
-       
-
+        </div>
+       </div>
+        
         
          
-         <div class="card-footer text-muted navbar dark bg-dark">
-    
-  </div>
-        
         </div>
       );
     }
